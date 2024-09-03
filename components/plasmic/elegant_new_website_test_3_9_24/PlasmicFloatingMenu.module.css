@@ -1,0 +1,94 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  background: none;
+  min-width: 0;
+  padding: 12px;
+}
+.collapse:global(.__wab_instance) {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  transition-property: all, background;
+  transition-duration: 1s, 1s;
+  transition-timing-function: linear, ease;
+  color: #ffffff;
+  min-width: 0;
+  -webkit-transition-property: all, background;
+  -webkit-transition-timing-function: linear, ease;
+  -webkit-transition-duration: 1s, 1s;
+}
+.link__jHLzo {
+  text-align: right;
+  text-transform: uppercase;
+  background: #ffffff59;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  box-shadow: none;
+  filter: drop-shadow(1px 1px 3px #ffffff);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+.link__goYhz {
+  text-align: right;
+  text-transform: uppercase;
+  background: #ffffff59;
+  box-shadow: none;
+  filter: drop-shadow(1px 1px 3px #ffffff);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 6px 12px 0px;
+}
+.link___91Bmb {
+  text-align: right;
+  text-transform: uppercase;
+  background: #ffffff59;
+  box-shadow: none;
+  filter: drop-shadow(1px 1px 3px #ffffff);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 6px 12px 0px;
+}
+.link__huM8S {
+  text-align: right;
+  text-transform: uppercase;
+  background: #ffffff59;
+  box-shadow: none;
+  backdrop-filter: blur(2px);
+  filter: drop-shadow(1px 1px 3px #ffffff);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 6px 12px 0px;
+}
+.link__xz76C {
+  text-align: right;
+  text-transform: uppercase;
+  background: #ffffff59;
+  box-shadow: none;
+  filter: drop-shadow(1px 1px 3px #ffffff);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 6px 12px;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  width: 34px;
+  height: 31px;
+  color: var(--token-pxs5khDZnrXK);
+  box-shadow: inset 1px 1px 2px 1px var(--token-Q8yrNFKwqzAy);
+  cursor: pointer;
+  filter: drop-shadow(3px 3px 4px #ffffff);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 5px;
+}
