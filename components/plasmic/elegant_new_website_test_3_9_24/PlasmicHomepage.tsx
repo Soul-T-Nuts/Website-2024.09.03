@@ -421,9 +421,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       displayWidth={"56.25%"}
                       loading={"lazy"}
                       src={{
-                        src: "/plasmic/elegant_new_website_test_3_9_24/images/screenshot202407212250282Png.png",
-                        fullWidth: 1008,
-                        fullHeight: 2244,
+                        src: "/plasmic/elegant_ink_website_3_9_24/images/img22502Jpg.jpg",
+                        fullWidth: 400,
+                        fullHeight: 890,
                         aspectRatio: undefined
                       }}
                     />
@@ -508,9 +508,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/elegant_new_website_test_3_9_24/images/screenshot202407212250282Png.png",
-                    fullWidth: 1008,
-                    fullHeight: 2244,
+                    src: "/plasmic/elegant_ink_website_3_9_24/images/img22502Jpg.jpg",
+                    fullWidth: 400,
+                    fullHeight: 890,
                     aspectRatio: undefined
                   }}
                 />

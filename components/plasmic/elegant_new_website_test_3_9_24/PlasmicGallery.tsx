@@ -315,6 +315,7 @@ function PlasmicGallery__RenderFunc(props: {
             data-plasmic-name={"section"}
             data-plasmic-override={overrides.section}
             className={classNames(projectcss.all, sty.section)}
+            loading={"Lazy"}
           >
             {(() => {
               const child$Props = {

@@ -1030,34 +1030,9 @@
       ],
       "icons": [
         {
-          "id": "g_0w4sOwPec1",
-          "name": "_153609SvgIcon",
-          "moduleFilePath": "plasmic/elegant_new_website_test_3_9_24/icons/PlasmicIcon___153609Svg.tsx"
-        },
-        {
-          "id": "y4qvDyD-ZbrU",
-          "name": "CheckSvgIcon",
-          "moduleFilePath": "plasmic/elegant_new_website_test_3_9_24/icons/PlasmicIcon__CheckSvg.tsx"
-        },
-        {
-          "id": "NdlmzQKzQZWM",
-          "name": "IconIcon",
-          "moduleFilePath": "plasmic/elegant_new_website_test_3_9_24/icons/PlasmicIcon__Icon.tsx"
-        },
-        {
           "id": "efBSNMGvhDhL",
           "name": "StarSvgrepoComSvg2Icon",
           "moduleFilePath": "plasmic/elegant_new_website_test_3_9_24/icons/PlasmicIcon__StarSvgrepoComSvg2.tsx"
-        },
-        {
-          "id": "oZzX0ptf6j2O",
-          "name": "Icon2Icon",
-          "moduleFilePath": "plasmic/elegant_new_website_test_3_9_24/icons/PlasmicIcon__Icon2.tsx"
-        },
-        {
-          "id": "pXKcPj35HNNH",
-          "name": "EyebrowSvgrepoCom1SvgIcon",
-          "moduleFilePath": "plasmic/elegant_new_website_test_3_9_24/icons/PlasmicIcon__EyebrowSvgrepoCom1Svg.tsx"
         },
         {
           "id": "gTtU8L3eEdOF",
@@ -1090,11 +1065,6 @@
           "id": "FD50jGII-jzS",
           "name": "IMG_7852~2.jpg",
           "filePath": "../public/plasmic/elegant_new_website_test_3_9_24/images/img78522Jpg.jpg"
-        },
-        {
-          "id": "zV5wWbiKV81b",
-          "name": "Screenshot_20240721-225028~2.png",
-          "filePath": "../public/plasmic/elegant_new_website_test_3_9_24/images/screenshot202407212250282Png.png"
         },
         {
           "id": "abc6gkOflPEc",
@@ -1175,6 +1145,11 @@
           "id": "vOaHuSSq2fIu",
           "name": "PXL_20240708_055033810.jpg",
           "filePath": "../public/plasmic/elegant_new_website_test_3_9_24/images/pxl20240708055033810Jpg.jpg"
+        },
+        {
+          "id": "2RwiDqoaGUva",
+          "name": "IMG_2250~2.jpg",
+          "filePath": "../public/plasmic/elegant_ink_website_3_9_24/images/img22502Jpg.jpg"
         }
       ],
       "indirect": false,

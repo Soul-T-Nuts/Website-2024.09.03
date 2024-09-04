@@ -357,7 +357,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__x2W1Y)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={"Certificate"}
                       className={classNames(sty.img___50Ko8)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
