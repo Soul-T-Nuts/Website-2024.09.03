@@ -7,6 +7,9 @@ import GlobalContextsProvider from "../components/plasmic/elegant_new_website_te
 import { PlasmicGallery } from "../components/plasmic/elegant_new_website_test_3_9_24/PlasmicGallery";
 import { useRouter } from "next/router";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function Gallery() {
   // Use PlasmicGallery to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
