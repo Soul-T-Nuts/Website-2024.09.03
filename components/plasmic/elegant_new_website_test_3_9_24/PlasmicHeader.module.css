@@ -51,9 +51,8 @@
     justify-content: center;
   }
 }
-.embedHtml:global(.__wab_instance) {
+.gTag:global(.__wab_instance) {
   max-width: 100%;
-  object-fit: cover;
 }
 .freeBox__phkTl {
   display: flex;

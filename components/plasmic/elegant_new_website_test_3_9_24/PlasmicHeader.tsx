@@ -59,7 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import { Embed } from "@plasmicpkgs/plasmic-basic-components";
+import GTag from "../../GTag"; // plasmic-import: SOrV5Rhj1cpE/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -81,7 +81,7 @@ export const PlasmicHeader__ArgProps = new Array<ArgPropType>();
 export type PlasmicHeader__OverridesType = {
   root?: Flex__<"div">;
   nameLogo?: Flex__<"div">;
-  embedHtml?: Flex__<typeof Embed>;
+  gTag?: Flex__<typeof GTag>;
   link?: Flex__<"a"> & Partial<LinkProps>;
   img?: Flex__<typeof PlasmicImg__>;
   name?: Flex__<"a"> & Partial<LinkProps>;
@@ -147,13 +147,10 @@ function PlasmicHeader__RenderFunc(props: {
         data-plasmic-override={overrides.nameLogo}
         className={classNames(projectcss.all, sty.nameLogo)}
       >
-        <Embed
-          data-plasmic-name={"embedHtml"}
-          data-plasmic-override={overrides.embedHtml}
-          className={classNames("__wab_instance", sty.embedHtml)}
-          code={
-            "<!-- Google tag (gtag.js) -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-1F85PP6LR6\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gtag('config', 'G-1F85PP6LR6');\r\n</script>"
-          }
+        <GTag
+          data-plasmic-name={"gTag"}
+          data-plasmic-override={overrides.gTag}
+          className={classNames("__wab_instance", sty.gTag)}
         />
 
         <div className={classNames(projectcss.all, sty.freeBox__phkTl)}>
@@ -296,7 +293,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "nameLogo",
-    "embedHtml",
+    "gTag",
     "link",
     "img",
     "name",
@@ -307,8 +304,8 @@ const PlasmicDescendants = {
     "gallery",
     "contact"
   ],
-  nameLogo: ["nameLogo", "embedHtml", "link", "img", "name"],
-  embedHtml: ["embedHtml"],
+  nameLogo: ["nameLogo", "gTag", "link", "img", "name"],
+  gTag: ["gTag"],
   link: ["link", "img"],
   img: ["img"],
   name: ["name"],
@@ -325,7 +322,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   nameLogo: "div";
-  embedHtml: typeof Embed;
+  gTag: typeof GTag;
   link: "a";
   img: typeof PlasmicImg__;
   name: "a";
@@ -398,7 +395,7 @@ export const PlasmicHeader = Object.assign(
   {
     // Helper components rendering sub-elements
     nameLogo: makeNodeComponent("nameLogo"),
-    embedHtml: makeNodeComponent("embedHtml"),
+    gTag: makeNodeComponent("gTag"),
     link: makeNodeComponent("link"),
     img: makeNodeComponent("img"),
     _name: makeNodeComponent("name"),
