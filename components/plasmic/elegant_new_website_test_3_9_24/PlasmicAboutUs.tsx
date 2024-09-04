@@ -309,7 +309,7 @@ function PlasmicAboutUs__RenderFunc(props: {
             <Reveal
               className={classNames("__wab_instance", sty.reveal__brChi)}
               duration={1500}
-              triggerOnce={false}
+              triggerOnce={true}
             >
               <Stack__
                 as={"div"}

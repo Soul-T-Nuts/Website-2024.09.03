@@ -359,7 +359,7 @@ function PlasmicServices__RenderFunc(props: {
             <Reveal
               className={classNames("__wab_instance", sty.reveal___8PtDg)}
               duration={1500}
-              triggerOnce={false}
+              triggerOnce={true}
             >
               <div className={classNames(projectcss.all, sty.freeBox__nfDsu)}>
                 <div
@@ -463,7 +463,7 @@ function PlasmicServices__RenderFunc(props: {
             <Reveal
               className={classNames("__wab_instance", sty.reveal__s6J67)}
               duration={1500}
-              triggerOnce={false}
+              triggerOnce={true}
             >
               <div className={classNames(projectcss.all, sty.freeBox__tkwh3)}>
                 <div

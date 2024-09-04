@@ -373,7 +373,7 @@ function PlasmicHomepage__RenderFunc(props: {
             <Reveal
               className={classNames("__wab_instance", sty.reveal__qn82E)}
               duration={1500}
-              triggerOnce={false}
+              triggerOnce={true}
             >
               <Stack__
                 as={"div"}
@@ -582,7 +582,7 @@ function PlasmicHomepage__RenderFunc(props: {
               className={classNames("__wab_instance", sty.reveal__iHeid)}
               delay={10}
               effect={"fade"}
-              triggerOnce={false}
+              triggerOnce={true}
             >
               <div className={classNames(projectcss.all, sty.freeBox__ju6)}>
                 <div

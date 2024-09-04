@@ -254,19 +254,6 @@ function PlasmicFloatingMenu__RenderFunc(props: {
                 projectcss.all,
                 projectcss.a,
                 projectcss.__wab_text,
-                sty.link___91Bmb
-              )}
-              component={Link}
-              href={`/gallery`}
-              platform={"nextjs"}
-            >
-              {"Gallery"}
-            </PlasmicLink__>
-            <PlasmicLink__
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
                 sty.link__huM8S
               )}
               component={Link}
@@ -274,6 +261,19 @@ function PlasmicFloatingMenu__RenderFunc(props: {
               platform={"nextjs"}
             >
               {"Services"}
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link___91Bmb
+              )}
+              component={Link}
+              href={`/gallery`}
+              platform={"nextjs"}
+            >
+              {"Gallery"}
             </PlasmicLink__>
             <PlasmicLink__
               className={classNames(
