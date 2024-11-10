@@ -122,7 +122,9 @@ function PlasmicFloatingMenu__RenderFunc(props: {
         {
           open: false
         },
-        props.args
+        Object.fromEntries(
+          Object.entries(props.args).filter(([_, v]) => v !== undefined)
+        )
       ),
     [props.args]
   );
