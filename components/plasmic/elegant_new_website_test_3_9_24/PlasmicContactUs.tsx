@@ -360,7 +360,7 @@ function PlasmicContactUs__RenderFunc(props: {
                 <Embed
                   className={classNames("__wab_instance", sty.embedHtml__sLBf)}
                   code={
-                    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.3801578750176!2d150.73984197537663!3d-34.008451573173396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12f2223017a20b%3A0x1793a8c26a121d74!2s24A%20Rowan%20St%2C%20Oran%20Park%20NSW%202570!5e0!3m2!1sen!2sau!4v1731276221055!5m2!1sen!2sau" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+                    '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.3801578750176!2d150.73984197537663!3d-34.008451573173396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12f2223017a20b%3A0x1793a8c26a121d74!2s24A%20Rowan%20St%2C%20Oran%20Park%20NSW%202570!5e0!3m2!1sen!2sau!4v1731276221055!5m2!1sen!2sau" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
                   }
                 />
               </div>
