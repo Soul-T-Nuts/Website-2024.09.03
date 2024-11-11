@@ -184,7 +184,7 @@ function PlasmicHeader__RenderFunc(props: {
               displayMaxWidth={"none"}
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"30px"}
+              displayWidth={"40px"}
               loading={"lazy"}
               src={{
                 src: "/plasmic/elegant_new_website_test_3_9_24/images/logoPng.png",

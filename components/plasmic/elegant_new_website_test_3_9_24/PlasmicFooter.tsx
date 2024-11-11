@@ -177,7 +177,7 @@ function PlasmicFooter__RenderFunc(props: {
             )}
           >
             {
-              "\u00a9 2024 Elegant Ink by MB. ABN 76 830 713 314. All rights Reserved. "
+              "\u00a9 2024 Elegant Ink by MB.\nABN 76 830 713 314. \nAll rights Reserved. "
             }
           </div>
         </div>

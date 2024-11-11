@@ -103,6 +103,7 @@
   text-transform: uppercase;
   text-align: left;
   min-width: 0;
+  padding: 10px;
 }
 .link__fup8L {
   display: flex;
@@ -610,6 +611,7 @@
   max-width: 100%;
   text-align: center;
   color: var(--token-ZS3qww8ZYgx_);
+  margin-bottom: 10px;
   min-width: 0;
 }
 .sliderCarousel:global(.__wab_instance) {
