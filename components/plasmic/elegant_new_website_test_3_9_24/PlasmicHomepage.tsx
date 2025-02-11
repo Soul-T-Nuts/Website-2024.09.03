@@ -94,8 +94,10 @@ export type PlasmicHomepage__OverridesType = {
   floatingMenu?: Flex__<typeof FloatingMenu>;
   header?: Flex__<typeof Header>;
   hero?: Flex__<"section">;
+  title?: Flex__<"h1">;
   bookButton?: Flex__<typeof Button>;
   mobileHero?: Flex__<"section">;
+  h1?: Flex__<"h1">;
   bookButton2?: Flex__<typeof Button>;
   photos?: Flex__<"div">;
   text?: Flex__<"div">;
@@ -281,11 +283,14 @@ function PlasmicHomepage__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.freeBox___6WbBi)}>
               <div className={classNames(projectcss.all, sty.freeBox__qzQjM)}>
-                <div
+                <h1
+                  data-plasmic-name={"title"}
+                  data-plasmic-override={overrides.title}
                   className={classNames(
                     projectcss.all,
+                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.text__w1CBw
+                    sty.title
                   )}
                 >
                   <React.Fragment>
@@ -293,10 +298,17 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#F2F2F2" }}
                     >
-                      {"wake up every morning with perfect brows"}
+                      {"Elegant Ink: "}
+                    </span>
+                    <React.Fragment>{"\n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#F2F2F2" }}
+                    >
+                      {"Your Expert in Permanent Makeup & Cosmetic Tattoos"}
                     </span>
                   </React.Fragment>
-                </div>
+                </h1>
                 <PlasmicLink__
                   className={classNames(
                     projectcss.all,
@@ -341,11 +353,14 @@ function PlasmicHomepage__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.freeBox__whHuG)}>
               <div className={classNames(projectcss.all, sty.freeBox__k2O)}>
-                <div
+                <h1
+                  data-plasmic-name={"h1"}
+                  data-plasmic-override={overrides.h1}
                   className={classNames(
                     projectcss.all,
+                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.text__sMGvx
+                    sty.h1
                   )}
                 >
                   <React.Fragment>
@@ -353,10 +368,17 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ color: "#F2F2F2" }}
                     >
-                      {"wake up every morning with perfect brows"}
+                      {"Elegant Ink: "}
+                    </span>
+                    <React.Fragment>{"\n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#F2F2F2" }}
+                    >
+                      {"Your Expert in Permanent Makeup & Cosmetic Tattoos\r"}
                     </span>
                   </React.Fragment>
-                </div>
+                </h1>
                 <PlasmicLink__
                   className={classNames(
                     projectcss.all,
@@ -467,15 +489,16 @@ function PlasmicHomepage__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.text)}
                 >
-                  <div
+                  <h2
                     className={classNames(
                       projectcss.all,
+                      projectcss.h2,
                       projectcss.__wab_text,
-                      sty.text___7ZtwA
+                      sty.h2___7ZtwA
                     )}
                   >
                     {"About us"}
-                  </div>
+                  </h2>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -626,15 +649,16 @@ function PlasmicHomepage__RenderFunc(props: {
               triggerOnce={true}
             >
               <div className={classNames(projectcss.all, sty.freeBox__ju6)}>
-                <div
+                <h2
                   className={classNames(
                     projectcss.all,
+                    projectcss.h2,
                     projectcss.__wab_text,
-                    sty.text__nShMt
+                    sty.h2__nShMt
                   )}
                 >
                   {"Reviews"}
-                </div>
+                </h2>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -827,8 +851,10 @@ const PlasmicDescendants = {
     "floatingMenu",
     "header",
     "hero",
+    "title",
     "bookButton",
     "mobileHero",
+    "h1",
     "bookButton2",
     "photos",
     "text",
@@ -844,9 +870,11 @@ const PlasmicDescendants = {
   ],
   floatingMenu: ["floatingMenu"],
   header: ["header"],
-  hero: ["hero", "bookButton"],
+  hero: ["hero", "title", "bookButton"],
+  title: ["title"],
   bookButton: ["bookButton"],
-  mobileHero: ["mobileHero", "bookButton2"],
+  mobileHero: ["mobileHero", "h1", "bookButton2"],
+  h1: ["h1"],
   bookButton2: ["bookButton2"],
   photos: ["photos"],
   text: ["text", "aboutUsButton"],
@@ -868,8 +896,10 @@ type NodeDefaultElementType = {
   floatingMenu: typeof FloatingMenu;
   header: typeof Header;
   hero: "section";
+  title: "h1";
   bookButton: typeof Button;
   mobileHero: "section";
+  h1: "h1";
   bookButton2: typeof Button;
   photos: "div";
   text: "div";
@@ -947,8 +977,10 @@ export const PlasmicHomepage = Object.assign(
     floatingMenu: makeNodeComponent("floatingMenu"),
     header: makeNodeComponent("header"),
     hero: makeNodeComponent("hero"),
+    title: makeNodeComponent("title"),
     bookButton: makeNodeComponent("bookButton"),
     mobileHero: makeNodeComponent("mobileHero"),
+    h1: makeNodeComponent("h1"),
     bookButton2: makeNodeComponent("bookButton2"),
     photos: makeNodeComponent("photos"),
     text: makeNodeComponent("text"),
@@ -966,14 +998,21 @@ export const PlasmicHomepage = Object.assign(
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps,
 
+    // Key-value metadata
+    metadata: {
+      lang: "en",
+      keywords:
+        "permanent makeup, cosmetic tattooing, lip tattoo, eyebrow tattoo, Sydney, beauty, Elegant Ink"
+    },
+
     // Page metadata
     pageMetadata: {
-      title: "Elegant Ink",
+      title: "Elegant Ink - Expert Permanent Makeup, Lip & Eyebrow Tattoos",
       description:
         "At Elegant Ink, we are dedicated to providing high-quality permanent makeup services that enhance your natural beauty and boost your confidence.",
       ogImageSrc:
         "https://site-assets.plasmic.app/f5460de3c47373fc7c1b77c39e4e4905.png",
-      canonical: "https://elegantink.au/"
+      canonical: "https://www.elegantink.au/"
     }
   }
 );

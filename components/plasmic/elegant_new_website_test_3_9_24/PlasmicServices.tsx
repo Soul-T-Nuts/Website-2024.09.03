@@ -266,11 +266,12 @@ function PlasmicServices__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.freeBox___7NnEo)}>
               <div className={classNames(projectcss.all, sty.freeBox__vsbM)}>
-                <div
+                <h1
                   className={classNames(
                     projectcss.all,
+                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.text__vgaqk
+                    sty.h1__vgaqk
                   )}
                 >
                   <React.Fragment>
@@ -281,7 +282,7 @@ function PlasmicServices__RenderFunc(props: {
                       {"Services"}
                     </span>
                   </React.Fragment>
-                </div>
+                </h1>
                 <PlasmicLink__
                   className={classNames(
                     projectcss.all,
@@ -324,11 +325,12 @@ function PlasmicServices__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.freeBox__uQDi)}>
               <div className={classNames(projectcss.all, sty.freeBox__nIb)}>
-                <div
+                <h1
                   className={classNames(
                     projectcss.all,
+                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.text__tIRnJ
+                    sty.h1__tIRnJ
                   )}
                 >
                   <React.Fragment>
@@ -339,7 +341,7 @@ function PlasmicServices__RenderFunc(props: {
                       {"Services"}
                     </span>
                   </React.Fragment>
-                </div>
+                </h1>
                 <PlasmicLink__
                   className={classNames(
                     projectcss.all,
@@ -383,15 +385,16 @@ function PlasmicServices__RenderFunc(props: {
               triggerOnce={true}
             >
               <div className={classNames(projectcss.all, sty.freeBox__nfDsu)}>
-                <div
+                <h2
                   className={classNames(
                     projectcss.all,
+                    projectcss.h2,
                     projectcss.__wab_text,
-                    sty.text__wJ08N
+                    sty.h2__wJ08N
                   )}
                 >
                   {"Lips"}
-                </div>
+                </h2>
                 <LipsOfFemaleSexyMouthSvgrepoComSvgIcon
                   className={classNames(projectcss.all, sty.svg__xglfq)}
                   role={"img"}
@@ -487,15 +490,16 @@ function PlasmicServices__RenderFunc(props: {
               triggerOnce={true}
             >
               <div className={classNames(projectcss.all, sty.freeBox__tkwh3)}>
-                <div
+                <h2
                   className={classNames(
                     projectcss.all,
+                    projectcss.h2,
                     projectcss.__wab_text,
-                    sty.text__mKhsD
+                    sty.h2__mKhsD
                   )}
                 >
                   {"Brows"}
-                </div>
+                </h2>
                 <EyebrowSvgrepoComSvgIcon
                   className={classNames(projectcss.all, sty.svg__ayQer)}
                   role={"img"}

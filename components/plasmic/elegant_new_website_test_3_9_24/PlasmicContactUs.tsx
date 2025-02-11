@@ -256,11 +256,12 @@ function PlasmicContactUs__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.freeBox__a7Bac)}>
               <div className={classNames(projectcss.all, sty.freeBox__dAepf)}>
-                <div
+                <h1
                   className={classNames(
                     projectcss.all,
+                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.text__bUkuR
+                    sty.h1__bUkuR
                   )}
                 >
                   <React.Fragment>
@@ -271,7 +272,7 @@ function PlasmicContactUs__RenderFunc(props: {
                       {"Contact us"}
                     </span>
                   </React.Fragment>
-                </div>
+                </h1>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__frlwf)} />
             </div>
@@ -283,11 +284,12 @@ function PlasmicContactUs__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.freeBox__fFjiJ)}>
               <div className={classNames(projectcss.all, sty.freeBox___2P1Gm)}>
-                <div
+                <h1
                   className={classNames(
                     projectcss.all,
+                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.text__guTjM
+                    sty.h1__guTjM
                   )}
                 >
                   <React.Fragment>
@@ -298,7 +300,7 @@ function PlasmicContactUs__RenderFunc(props: {
                       {"Contact Us"}
                     </span>
                   </React.Fragment>
-                </div>
+                </h1>
               </div>
             </div>
           </section>

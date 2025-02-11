@@ -268,11 +268,12 @@ function PlasmicGallery__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.freeBox__qmJpo)}>
               <div className={classNames(projectcss.all, sty.freeBox__uXswi)}>
-                <div
+                <h1
                   className={classNames(
                     projectcss.all,
+                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.text__rIvPr
+                    sty.h1__rIvPr
                   )}
                 >
                   <React.Fragment>
@@ -283,7 +284,7 @@ function PlasmicGallery__RenderFunc(props: {
                       {"Gallery"}
                     </span>
                   </React.Fragment>
-                </div>
+                </h1>
                 <div
                   className={classNames(
                     projectcss.all,
@@ -304,11 +305,12 @@ function PlasmicGallery__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.freeBox__nAzHj)}>
               <div className={classNames(projectcss.all, sty.freeBox__dVJaU)}>
-                <div
+                <h1
                   className={classNames(
                     projectcss.all,
+                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.text__x36XU
+                    sty.h1__x36XU
                   )}
                 >
                   <React.Fragment>
@@ -319,7 +321,7 @@ function PlasmicGallery__RenderFunc(props: {
                       {"Gallery"}
                     </span>
                   </React.Fragment>
-                </div>
+                </h1>
                 <div
                   className={classNames(
                     projectcss.all,

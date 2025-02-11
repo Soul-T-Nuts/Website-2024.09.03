@@ -280,11 +280,12 @@ function PlasmicAboutUs__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.freeBox__b5G)}>
               <div className={classNames(projectcss.all, sty.freeBox___8A59W)}>
-                <div
+                <h1
                   className={classNames(
                     projectcss.all,
+                    projectcss.h1,
                     projectcss.__wab_text,
-                    sty.text___6F8U1
+                    sty.h1___6F8U1
                   )}
                 >
                   <React.Fragment>
@@ -295,7 +296,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                       {"About us"}
                     </span>
                   </React.Fragment>
-                </div>
+                </h1>
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__mPK)} />
             </div>
@@ -306,7 +307,13 @@ function PlasmicAboutUs__RenderFunc(props: {
             className={classNames(projectcss.all, sty.mobileHero)}
           >
             <div className={classNames(projectcss.all, sty.freeBox__goems)}>
-              <div className={classNames(projectcss.all, sty.freeBox__m1Lar)}>
+              <h1
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  sty.h1__m1Lar
+                )}
+              >
                 <div
                   className={classNames(
                     projectcss.all,
@@ -323,7 +330,7 @@ function PlasmicAboutUs__RenderFunc(props: {
                     </span>
                   </React.Fragment>
                 </div>
-              </div>
+              </h1>
             </div>
           </section>
           <section className={classNames(projectcss.all, sty.section__zyrJe)}>
@@ -344,15 +351,16 @@ function PlasmicAboutUs__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.text)}
                 >
-                  <div
+                  <h2
                     className={classNames(
                       projectcss.all,
+                      projectcss.h2,
                       projectcss.__wab_text,
-                      sty.text__zjr60
+                      sty.h2__zjr60
                     )}
                   >
                     {"Elegant Ink: Permanent makeup artistry"}
-                  </div>
+                  </h2>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -422,15 +430,16 @@ function PlasmicAboutUs__RenderFunc(props: {
                     data-plasmic-override={overrides.text2}
                     className={classNames(projectcss.all, sty.text2)}
                   >
-                    <div
+                    <h2
                       className={classNames(
                         projectcss.all,
+                        projectcss.h2,
                         projectcss.__wab_text,
-                        sty.text__sgkRe
+                        sty.h2__sgkRe
                       )}
                     >
                       {"Elegant Ink: Permanent makeup artistry"}
-                    </div>
+                    </h2>
                     <div
                       className={classNames(
                         projectcss.all,
@@ -482,6 +491,16 @@ function PlasmicAboutUs__RenderFunc(props: {
             data-plasmic-override={overrides.faQs}
             className={classNames(projectcss.all, sty.faQs)}
           >
+            <h2
+              className={classNames(
+                projectcss.all,
+                projectcss.h2,
+                projectcss.__wab_text,
+                sty.h2___4Gr3G
+              )}
+            >
+              {"Frequently Asked Questions"}
+            </h2>
             <CmsQueryRepeater
               data-plasmic-name={"cmsDataFetcher"}
               data-plasmic-override={overrides.cmsDataFetcher}
