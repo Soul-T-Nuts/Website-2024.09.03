@@ -249,10 +249,22 @@ function PlasmicAboutUs__RenderFunc(props: {
             data-plasmic-name={"floatingMenu"}
             data-plasmic-override={overrides.floatingMenu}
             className={classNames("__wab_instance", sty.floatingMenu)}
-            onPlasmicAntd5SingleCollapseOpenChange={generateStateOnChangeProp(
-              $state,
-              ["floatingMenu", "plasmicAntd5SingleCollapseOpen"]
-            )}
+            onPlasmicAntd5SingleCollapseOpenChange={async (
+              ...eventArgs: any
+            ) => {
+              generateStateOnChangeProp($state, [
+                "floatingMenu",
+                "plasmicAntd5SingleCollapseOpen"
+              ]).apply(null, eventArgs);
+
+              if (
+                eventArgs.length > 1 &&
+                eventArgs[1] &&
+                eventArgs[1]._plasmic_state_init_
+              ) {
+                return;
+              }
+            }}
           />
 
           <Header
@@ -366,7 +378,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__x2W1Y)}
                   >
                     <PlasmicImg__
-                      alt={"Certificate"}
+                      alt={
+                        "The business owner proudly holding a certificate after completing a course on permanent makeup artistry, showcasing their expertise and commitment to professional cosmetic services."
+                      }
                       className={classNames(sty.img___50Ko8)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -381,6 +395,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                         fullHeight: 836,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "Certified Permanent Makeup Artist: Expertise You Can Trust."
+                      }
                     />
                   </Stack__>
                 </Stack__>
@@ -436,7 +453,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.photos2)}
               >
                 <PlasmicImg__
-                  alt={""}
+                  alt={
+                    "The business owner proudly holding a certificate after completing a course on permanent makeup artistry, showcasing their expertise and commitment to professional cosmetic services."
+                  }
                   className={classNames(sty.img___28Htt)}
                   displayHeight={"250px"}
                   displayMaxHeight={"none"}
@@ -451,6 +470,9 @@ function PlasmicAboutUs__RenderFunc(props: {
                     fullHeight: 836,
                     aspectRatio: undefined
                   }}
+                  title={
+                    "Certified Permanent Makeup Artist: Expertise You Can Trust."
+                  }
                 />
               </Stack__>
             </section>
@@ -608,12 +630,14 @@ function PlasmicAboutUs__RenderFunc(props: {
                             />
                           </React.Fragment>
                         ),
-                        onChange: generateStateOnChangePropForCodeComponents(
-                          $state,
-                          "activePanelId",
-                          ["accordion", "activePanelId"],
-                          AntdAccordion_Helpers
-                        )
+                        onChange: async (...eventArgs: any) => {
+                          generateStateOnChangePropForCodeComponents(
+                            $state,
+                            "activePanelId",
+                            ["accordion", "activePanelId"],
+                            AntdAccordion_Helpers
+                          ).apply(null, eventArgs);
+                        }
                       };
                       initializeCodeComponentStates(
                         $state,

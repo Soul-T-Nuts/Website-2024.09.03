@@ -237,10 +237,22 @@ function PlasmicGallery__RenderFunc(props: {
             data-plasmic-name={"floatingMenu"}
             data-plasmic-override={overrides.floatingMenu}
             className={classNames("__wab_instance", sty.floatingMenu)}
-            onPlasmicAntd5SingleCollapseOpenChange={generateStateOnChangeProp(
-              $state,
-              ["floatingMenu", "plasmicAntd5SingleCollapseOpen"]
-            )}
+            onPlasmicAntd5SingleCollapseOpenChange={async (
+              ...eventArgs: any
+            ) => {
+              generateStateOnChangeProp($state, [
+                "floatingMenu",
+                "plasmicAntd5SingleCollapseOpen"
+              ]).apply(null, eventArgs);
+
+              if (
+                eventArgs.length > 1 &&
+                eventArgs[1] &&
+                eventArgs[1]._plasmic_state_init_
+              ) {
+                return;
+              }
+            }}
           />
 
           <Header
@@ -332,12 +344,14 @@ function PlasmicGallery__RenderFunc(props: {
                 arrows: true,
                 autoplay: true,
                 autoplaySpeed: 3000,
-                beforeChange: generateStateOnChangePropForCodeComponents(
-                  $state,
-                  "currentSlide",
-                  ["sliderCarousel", "currentSlide"],
-                  SliderWrapper_Helpers
-                ),
+                beforeChange: async (...eventArgs: any) => {
+                  generateStateOnChangePropForCodeComponents(
+                    $state,
+                    "currentSlide",
+                    ["sliderCarousel", "currentSlide"],
+                    SliderWrapper_Helpers
+                  ).apply(null, eventArgs);
+                },
                 centerMode: true,
                 className: classNames("__wab_instance", sty.sliderCarousel),
                 cssEase: "linear",
@@ -375,7 +389,9 @@ function PlasmicGallery__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__acwZt)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "A woman smiling before she receives her eyebrow tattoo."
+                      }
                       className={classNames(sty.img__m3P5)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -389,13 +405,16 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 3072,
                         aspectRatio: undefined
                       }}
+                      title={"Excited for her new perfect eyebrows."}
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox___71ClJ)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "The owner and a woman smiling and giving a thumbs up while wearing numbing cream on her eyebrows before she receives her permanent eyebrow makeup, highlighting the use of top-quality products for customer safety."
+                      }
                       className={classNames(sty.img__rpAsg)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -409,13 +428,18 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 2051,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "Thumbs up for top-quality permanent eyebrow makeup."
+                      }
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__syyd9)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "A closeup image of a woman with guidelines for the tattoo drawn on her eyebrows."
+                      }
                       className={classNames(sty.img___6YuBg)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -429,13 +453,16 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 2313,
                         aspectRatio: undefined
                       }}
+                      title={"Preparing for precise eyebrow tattooing."}
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__iURo5)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "A closeup image of a woman showing the finished product of her new permanent eyebrow tattoos."
+                      }
                       className={classNames(sty.img__tKchR)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -449,13 +476,16 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 2261,
                         aspectRatio: undefined
                       }}
+                      title={"After image of another happy eyebrow client."}
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__nu9W5)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "A closeup image of a smiling woman very happy with her eyebrow tattoos."
+                      }
                       className={classNames(sty.img__zEuy)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -469,13 +499,18 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 2345,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "Expert cosmetic tattooing for fuller, defined eyebrows."
+                      }
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__pHbv)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "Close-up before shot of eyebrows, showing their natural state before cosmetic tattooing."
+                      }
                       className={classNames(sty.img__dv0Y5)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -489,13 +524,16 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 1754,
                         aspectRatio: undefined
                       }}
+                      title={"Before shot: Eyebrows in their natural state."}
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__sUZzv)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "Close-up after shot of eyebrows, showcasing the results of the cosmetic tattooing procedure."
+                      }
                       className={classNames(sty.img__wECb3)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -509,13 +547,18 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 1243,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "After shot: Enhanced eyebrows with cosmetic tattooing."
+                      }
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__pzUKv)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "Before image showcasing the transformation from thin natural eyebrows."
+                      }
                       className={classNames(sty.img__nDdZa)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -529,13 +572,18 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 2120,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "Transform thin natural eyebrows with expert cosmetic tattooing."
+                      }
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__c8Rwf)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "Cosmetic tattoo artist meticulously preparing the area with precise guidelines."
+                      }
                       className={classNames(sty.img__vxC4I)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -549,13 +597,18 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 2313,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "Setting the stage for perfect cosmetic tattoo results."
+                      }
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__oHc4O)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "After images showcasing the transformation to beautifully enhanced cosmetic tattoos. What a change!"
+                      }
                       className={classNames(sty.img___4XiIh)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -569,13 +622,18 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 2313,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "From thin to defined: stunning eyebrow transformation."
+                      }
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__ocjSm)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "Close-up before shot of lips, showing their natural state before cosmetic tattooing."
+                      }
                       className={classNames(sty.img__lH2Hy)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -589,13 +647,16 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 1301,
                         aspectRatio: undefined
                       }}
+                      title={"Before shot: Lips in their natural state."}
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__gt8Rk)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "Close-up after shot of lips, showcasing the results of the cosmetic tattooing procedure."
+                      }
                       className={classNames(sty.img__jVkLe)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -609,13 +670,18 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 2539,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "After shot: Enhanced lips with cosmetic tattooing."
+                      }
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox___4PeC)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "Comparison of unkempt natural eyebrows and the polished look achieved with cosmetic tattooing."
+                      }
                       className={classNames(sty.img___8MXl)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -629,13 +695,18 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 2695,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "From unkempt to polished: stunning eyebrow transformation."
+                      }
                     />
                   </div>
                   <div
                     className={classNames(projectcss.all, sty.freeBox__h05OQ)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "The after image to compare the unkempt natural eyebrows and the polished look achieved with cosmetic tattooing."
+                      }
                       className={classNames(sty.img__srPyT)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -649,6 +720,9 @@ function PlasmicGallery__RenderFunc(props: {
                         fullHeight: 2062,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "Transform unkempt natural eyebrows with expert cosmetic tattooing."
+                      }
                     />
                   </div>
                 </SliderWrapper>

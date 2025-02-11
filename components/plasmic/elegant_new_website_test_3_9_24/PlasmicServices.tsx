@@ -235,10 +235,22 @@ function PlasmicServices__RenderFunc(props: {
             data-plasmic-name={"floatingMenu"}
             data-plasmic-override={overrides.floatingMenu}
             className={classNames("__wab_instance", sty.floatingMenu)}
-            onPlasmicAntd5SingleCollapseOpenChange={generateStateOnChangeProp(
-              $state,
-              ["floatingMenu", "plasmicAntd5SingleCollapseOpen"]
-            )}
+            onPlasmicAntd5SingleCollapseOpenChange={async (
+              ...eventArgs: any
+            ) => {
+              generateStateOnChangeProp($state, [
+                "floatingMenu",
+                "plasmicAntd5SingleCollapseOpen"
+              ]).apply(null, eventArgs);
+
+              if (
+                eventArgs.length > 1 &&
+                eventArgs[1] &&
+                eventArgs[1]._plasmic_state_init_
+              ) {
+                return;
+              }
+            }}
           />
 
           <Header

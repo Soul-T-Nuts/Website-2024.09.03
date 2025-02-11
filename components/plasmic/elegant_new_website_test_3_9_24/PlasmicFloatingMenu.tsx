@@ -196,12 +196,14 @@ function PlasmicFloatingMenu__RenderFunc(props: {
           ghost: true,
           headerClass: classNames({ [sty["pcls_cXpyo0pEhWGt"]]: true }),
           label2: null,
-          onChange: generateStateOnChangePropForCodeComponents(
-            $state,
-            "open",
-            ["collapse", "open"],
-            AntdSingleCollapse_Helpers
-          ),
+          onChange: async (...eventArgs: any) => {
+            generateStateOnChangePropForCodeComponents(
+              $state,
+              "open",
+              ["collapse", "open"],
+              AntdSingleCollapse_Helpers
+            ).apply(null, eventArgs);
+          },
           open: generateStateValueProp($state, ["collapse", "open"]),
           showArrow: true,
           size: "small"

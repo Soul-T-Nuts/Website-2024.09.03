@@ -250,10 +250,22 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-name={"floatingMenu"}
             data-plasmic-override={overrides.floatingMenu}
             className={classNames("__wab_instance", sty.floatingMenu)}
-            onPlasmicAntd5SingleCollapseOpenChange={generateStateOnChangeProp(
-              $state,
-              ["floatingMenu", "plasmicAntd5SingleCollapseOpen"]
-            )}
+            onPlasmicAntd5SingleCollapseOpenChange={async (
+              ...eventArgs: any
+            ) => {
+              generateStateOnChangeProp($state, [
+                "floatingMenu",
+                "plasmicAntd5SingleCollapseOpen"
+              ]).apply(null, eventArgs);
+
+              if (
+                eventArgs.length > 1 &&
+                eventArgs[1] &&
+                eventArgs[1]._plasmic_state_init_
+              ) {
+                return;
+              }
+            }}
           />
 
           <Header
@@ -402,7 +414,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.freeBox__syQfA)}
                   >
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "A woman receiving an eyebrow tattoo, enhancing her natural appearance with precise and professional cosmetic procedures for fuller, well-defined eyebrows."
+                      }
                       className={classNames(sty.img___8BQP)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -417,10 +431,15 @@ function PlasmicHomepage__RenderFunc(props: {
                         fullHeight: 836,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "Get fuller, well-defined eyebrows with expert cosmetic tattooing."
+                      }
                     />
 
                     <PlasmicImg__
-                      alt={""}
+                      alt={
+                        "A woman receiving a lip tattoo for permanent makeup, enhancing her natural beauty with a precise and professional cosmetic procedure."
+                      }
                       className={classNames(sty.img__iwo03)}
                       displayHeight={"auto"}
                       displayMaxHeight={"none"}
@@ -435,6 +454,9 @@ function PlasmicHomepage__RenderFunc(props: {
                         fullHeight: 890,
                         aspectRatio: undefined
                       }}
+                      title={
+                        "Achieve beautifully defined lips with professional permanent makeup."
+                      }
                     />
                   </Stack__>
                 </Stack__>
@@ -489,7 +511,9 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.photos2)}
               >
                 <PlasmicImg__
-                  alt={""}
+                  alt={
+                    "A woman receiving an eyebrow tattoo, enhancing her natural appearance with precise and professional cosmetic procedures for fuller, well-defined eyebrows."
+                  }
                   className={classNames(sty.img__p7PkV)}
                   displayHeight={"250px"}
                   displayMaxHeight={"none"}
@@ -504,10 +528,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     fullHeight: 836,
                     aspectRatio: undefined
                   }}
+                  title={
+                    "Get fuller, well-defined eyebrows with expert cosmetic tattooing."
+                  }
                 />
 
                 <PlasmicImg__
-                  alt={""}
+                  alt={
+                    "A woman receiving a lip tattoo for permanent makeup, enhancing her natural beauty with a precise and professional cosmetic procedure."
+                  }
                   className={classNames(sty.img__q9OOv)}
                   displayHeight={"250px"}
                   displayMaxHeight={"none"}
@@ -522,6 +551,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     fullHeight: 890,
                     aspectRatio: undefined
                   }}
+                  title={
+                    "Achieve beautifully defined lips with professional permanent makeup."
+                  }
                 />
               </Stack__>
               <Reveal
@@ -617,12 +649,14 @@ function PlasmicHomepage__RenderFunc(props: {
                     arrows: true,
                     autoplay: true,
                     autoplaySpeed: 3000,
-                    beforeChange: generateStateOnChangePropForCodeComponents(
-                      $state,
-                      "currentSlide",
-                      ["sliderCarousel", "currentSlide"],
-                      SliderWrapper_Helpers
-                    ),
+                    beforeChange: async (...eventArgs: any) => {
+                      generateStateOnChangePropForCodeComponents(
+                        $state,
+                        "currentSlide",
+                        ["sliderCarousel", "currentSlide"],
+                        SliderWrapper_Helpers
+                      ).apply(null, eventArgs);
+                    },
                     centerMode: true,
                     className: classNames("__wab_instance", sty.sliderCarousel),
                     cssEase: "linear",
