@@ -97,7 +97,6 @@ export type PlasmicHomepage__OverridesType = {
   title?: Flex__<"h1">;
   bookButton?: Flex__<typeof Button>;
   mobileHero?: Flex__<"section">;
-  h1?: Flex__<"h1">;
   bookButton2?: Flex__<typeof Button>;
   photos?: Flex__<"div">;
   text?: Flex__<"div">;
@@ -353,14 +352,12 @@ function PlasmicHomepage__RenderFunc(props: {
           >
             <div className={classNames(projectcss.all, sty.freeBox__whHuG)}>
               <div className={classNames(projectcss.all, sty.freeBox__k2O)}>
-                <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
+                <h2
                   className={classNames(
                     projectcss.all,
-                    projectcss.h1,
+                    projectcss.h2,
                     projectcss.__wab_text,
-                    sty.h1
+                    sty.h2__sMGvx
                   )}
                 >
                   <React.Fragment>
@@ -378,7 +375,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       {"Your Expert in Permanent Makeup & Cosmetic Tattoos\r"}
                     </span>
                   </React.Fragment>
-                </h1>
+                </h2>
                 <PlasmicLink__
                   className={classNames(
                     projectcss.all,
@@ -854,7 +851,6 @@ const PlasmicDescendants = {
     "title",
     "bookButton",
     "mobileHero",
-    "h1",
     "bookButton2",
     "photos",
     "text",
@@ -873,8 +869,7 @@ const PlasmicDescendants = {
   hero: ["hero", "title", "bookButton"],
   title: ["title"],
   bookButton: ["bookButton"],
-  mobileHero: ["mobileHero", "h1", "bookButton2"],
-  h1: ["h1"],
+  mobileHero: ["mobileHero", "bookButton2"],
   bookButton2: ["bookButton2"],
   photos: ["photos"],
   text: ["text", "aboutUsButton"],
@@ -899,7 +894,6 @@ type NodeDefaultElementType = {
   title: "h1";
   bookButton: typeof Button;
   mobileHero: "section";
-  h1: "h1";
   bookButton2: typeof Button;
   photos: "div";
   text: "div";
@@ -926,15 +920,15 @@ type NodeComponentProps<T extends NodeNameType> =
     args?: PlasmicHomepage__ArgsType;
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicHomepage__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    /* Specify args directly as props*/ Omit<
-      PlasmicHomepage__ArgsType,
-      ReservedPropsType
-    > &
-    /* Specify overrides for each element directly as props*/ Omit<
+    // Specify args directly as props
+    Omit<PlasmicHomepage__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
       NodeOverridesType<T>,
       ReservedPropsType | VariantPropType | ArgPropType
     > &
-    /* Specify props for the root element*/ Omit<
+    // Specify props for the root element
+    Omit<
       Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
       ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
     >;
@@ -980,7 +974,6 @@ export const PlasmicHomepage = Object.assign(
     title: makeNodeComponent("title"),
     bookButton: makeNodeComponent("bookButton"),
     mobileHero: makeNodeComponent("mobileHero"),
-    h1: makeNodeComponent("h1"),
     bookButton2: makeNodeComponent("bookButton2"),
     photos: makeNodeComponent("photos"),
     text: makeNodeComponent("text"),
